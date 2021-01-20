@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16;
+}
+
+.wrapper{
+    background: url("./images/bg-intro-desktop.png");
+
+}
+
+.bg-trans{
+    background: hsl(0, 100%, 74%);
+    opacity: 0.75;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+}
+
+.left-section{
+    color: white;
+    width: 50%;
+    padding: 100px;
+}
+
+.left-section h1{
+    font-weight: 700;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.right-section{
+    padding-left: 50px;
+}
+
+.right-section .top-text{
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    margin-left: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.5);
+    background-color: hsl(247, 47%, 41%);
+    color: white;
+    height: 50px;
+    
+}
+
+.bold{
+    font-weight: bold;    
+}
+
+.form-container{
+    padding: 20px 0px;
+    background-color: white;
+    height: 55vh;
+    width: 100%;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.5);
+    
+}
+
+.right-section input{
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+    height: 50px;
+    padding-left: 30px;
+    border-radius: 3px;
+    border: 1px solid rgb(117, 114, 114);
+}
+
+
+.right-section input::placeholder {
+    color:  hsl(252, 2%, 44%);
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+    opacity: 1; /* Firefox */
+}
+
+
+.right-section button{
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 3px;
+    height: 50px;
+    background-color: hsl(154, 52%, 40%);
+    border: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.5);
+    display: block;
+    color: hsl(246, 25%, 77%);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.bottom-text{
+    display: block;
+    font-size: 9px;
+    text-align: center;
+}
+
+.red{
+    color: hsl(0, 80%, 48%);
+}
+
+@media (max-width: 700px){
+    .container{
+        height: 150vh;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+/* 
+    .left-section{
+        width: 100%;
+    }
+
+    .right-section{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    
+    .right-section input,
+    .right-section button{
+        width: 300px;
+    }
+
+    .right-section p{
+        width: 300px;
+        margin: auto;
+    } */
+
+}

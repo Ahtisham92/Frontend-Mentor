@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --Padding-LR: 50px;
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* .container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+} */
+
+
+/* General Styling */
+
+ul li{
+    list-style: none;
+}
+
+
+ul li a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Raleway';
+    line-height: 1.4;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+
+/* Styling Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding: 0 var(--Padding-LR);
+}
+
+.navbar .logo{
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.navbar ul{
+    margin-top: 27px;
+    padding: 20px 0;
+}
+
+
+.navbar ul li{
+    display: inline;
+    margin-left: 50px;
+    /* text-align: center; */
+}
+
+.navbar ul li a{
+    color: black;
+    font-size: 14px;
+
+}
+
+/* Styling Illustration-1 */
+
+.illustration-1{
+    display: flex;
+    align-items: center;
+    padding: 0 var(--Padding-LR);
+}
+
+.illustration-1-left{
+    width: 50%;
+}
+
+.illustration-1-left h1{    width: 60%;}
+
+.illustration-1-left p{
+    font-weight: 400;
+    margin: 20px 0;
+    width: 60%;
+    font-size: 13px;
+}
+
+
+
+
+.illustration-1-left form input{
+    height: 32px;
+    width: 42%;
+    border: 1.5px solid black;
+    border-radius: 2px;
+    padding-left: 20px;
+    outline: none;
+}
+
+.illustration-1-left form input:focus{
+    box-shadow: 0  0 10px rgba(56, 55, 55, 0.7);
+
+}
+
+
+.illustration-1-left form button{
+    height: 32px;
+    margin-left: 10px;
+    width: 27%;
+    background-color:  hsl(224, 93%, 58%);
+    border: none;
+    color: white;
+    border-radius: 2px;
+}
+
+.illustration-1-right{
+    width: 50%;
+}
+
+
+
+.bg-mobile{
+    display: none;
+}
+
+/* bg-desktop */
+
+.bg-desktop{
+    height: 95px
+}
+
+.bg-desktop img{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1220px){
+    .bg-desktop{
+        height: 80px;
+    }
+}
+@media screen and (max-width: 1050px){
+    .bg-desktop{
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .bg-desktop{
+        height: 55px;
+    }
+}
+/* Style Illustration-2 */
+
+
+
+.illustration-2{
+    display: flex;
+    background-color: hsl(240, 75%, 98%);
+    align-items: center;
+    padding: 0 var(--Padding-LR);
+}
+
+
+.illustration-2-left{
+    width: 50%;
+}
+
+
+.illustration-2-left > p{
+    font-weight: 400;
+    margin: 20px 0;
+    width: 60%;
+    font-size: 13px;
+}
+
+
+
+
+.illustration-2-left .flyo-work{
+    display: flex;
+    width: 25%;
+    border-bottom: 2px solid #489e90;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+
+
+.illustration-2-left .flyo-work p{
+    color: #3DA08F;
+    margin: 0;
+    font-size: 14px;
+}
+
+.illustration-2-left .flyo-work .arrow{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 4px;
+    right: 0;
+}
+
+/* Style testinomial box */
+
+.illustration-2-left .testimonial{
+    width: 45%;
+    background-color: white;
+    box-shadow: 3px 3px 5px 6px rgba(250, 248, 248, 0.8);
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin-top: 30px;
+    margin-bottom: 50px ;
+}
+
+
+.illustration-2-left .testimonial > p{
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+.illustration-2-left .testimonial .writer{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.illustration-2-left .testimonial .writer .avatar{
+    /* display: inline; */
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+
+.illustration-2-left .testimonial .writer p{
+    display: flex;
+    flex-direction: column;
+}
+
+.small{
+    font-size: 10px;
+    font-weight: bold;
+
+}
+
+.extra-small{
+    font-size: 8px;
+}
+
+.illustration-2-right{
+    width: 50%;
+}
+
+
+/* Style Get Early Access Today */
+
+
+.bottom-box{
+    display: flex;
+    height: 250px;
+    background-color: hsl(238, 22%, 44%);
+    color: white;
+    align-items: center;
+    padding: 0 var(--Padding-LR);
+}
+
+.bottom-box-left{
+    width: 60%;
+}
+
+.bottom-box-left p{
+    width: 60%;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.bottom-box-right{
+    width: 40%;
+}
+
+.bottom-box-right input{
+    display: block;
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid black;
+    outline: none;
+    width: 80%;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.bottom-box-right button{
+    width: 45%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    padding: 2px 5px;
+}
+
+
+/* Style Footer */
+
+.footer{
+    display: flex;
+    height: 300px;
+    background-color: hsl(243, 87%, 12%);
+    padding: 0 var(--Padding-LR);
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact{
+    color: white;
+    padding-top: 80px;
+}
+
+
+
+.details a,
+.copy-right a,
+.contact p{
+    line-height: 1.7;
+}
+
+
+.details a,
+.copy-right a,
+.social-media i{
+    color: white;
+}
+
+.details{
+    padding-top: 130px;
+}
+
+.copy-right{
+    padding-top: 130px;
+}
+
+.social-media{
+    margin-right: 150px;
+    padding-top: 130px;
+}
+
+
+.social-media a{
+    margin-left: 10px;
+
+}
+
+.social-media i{
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid white;
+    vertical-align: center;
+    padding-top: 4px;
+}
+
+/* --------------------------------------------- Mobile Design ------------------------------------------------ */
+
+
+
+@media screen and (max-width: 700px){
+    .navbar .logo{
+        height: 80px;
+        width: 120px;
+    }
+
+    .navbar ul li{
+        margin-left: 10px;
+    }
+
+    .navbar ul{
+        margin-top: 27px;
+    }
+
+    /*--------------------------Styling illustratio-1------------------------  */
+    .illustration-1{
+        flex-direction: column-reverse;
+    }
+
+    .illustration-1-right{
+        width: 100%;
+    }
+    
+    .illustration-1-left,
+    .illustration-1-left h1,
+    .illustration-1-left p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .illustration-1 form{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 75px;
+    }
+
+    .illustration-1 form input,
+    .illustration-1 form button{
+        width: 100%;
+    }
+
+    
+    .illustration-1 form button{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+
+    /*--------------------------Curve backgrounds------------------------  */
+
+    .bg-desktop{
+        height: 35px;
+    }
+    
+    /* .bg-desktop{
+        display: none;
+    }
+
+    
+    .bg-mobile{
+        display: block;
+        height: 52.5px;
+    
+    } */
+
+    /*--------------------------Styling illustratio-1------------------------  */
+
+    .illustration-2{
+        flex-direction: column-reverse;
+    }
+
+    .illustration-2-right{
+        width: 100%;
+    }
+    
+    .illustration-2-left{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .illustration-2-left,
+    .illustration-2-left h1,
+    .illustration-2-left p{
+        width: 100%;
+    }
+    
+    .illustration-2-left h1,
+    .bottom-box-left h1{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    
+
+    .illustration-2-left .flyo-work{
+        width: 50%;
+        align-self: center;
+    }
+
+    .illustration-2-left .flyo-work p{
+        font-size: 13px;
+    }
+
+    .illustration-2-left .flyo-work img{
+        top: 2px !important;
+    }
+
+    .illustration-2-left .testimonial{
+        width: 100%;
+    }
+
+    /* .illustration-2-left .flyo-work{
+        margin: 10px auto;
+    }
+
+    .illustration-2-left .testimonial{
+        margin: 30px auto 50px;
+    } */
+
+    /*--------------------------Style bottom box------------------------  */
+
+    .bottom-box{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bottom-box-left,
+    .bottom-box-right{
+        width: 100%;
+    }
+
+    .bottom-box-left p{
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .bottom-box-right{
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .bottom-box-right input,
+    .bottom-box-right button{
+        width: 80%;
+        height: 30px;
+    }
+
+    
+    /*--------------------------sytle footer------------------------  */
+
+    .footer{
+        flex-direction: column;
+        height: auto;
+    }
+
+    
+    .contact img{
+        margin-bottom: 20px;
+    }
+
+    
+    .details a,
+    .copy-right a,
+    .contact p{
+        line-height: 2;
+    }
+
+
+    .details,
+    .copy-right,
+    .social-media{
+        padding-top: 30px;
+    }
+
+
+
+    .social-media {
+        margin-right: 0;
+        align-self: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* -------------------------Media Query for 768------------------------------ */
+
+@media (max-width: 900px) and (min-width: 699.9px){
+    .illustration-2{
+        flex-direction: column;
+    }
+
+    .illustration-2-left,
+    .illustration-2-right{
+        width: 100%;
+    }
+
+    .illustration-2-left h1,
+    .illustration-2-left p
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .illustration-2-left .flyo-work{
+        margin: 10px auto;
+    }
+
+    .illustration-2-left .testimonial{
+        margin: 30px auto 50px;
+    }
+
+}
